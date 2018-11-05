@@ -2,7 +2,7 @@
   <h2 class="text-center">Recent flats</h2>
     <div class="row">
       <% data.flats.each do |flat| %>
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 card-padding">
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city.downcase%>');">
             <div class="card-category"><%= flat.city %>, <%= flat.country %>
             </div>
