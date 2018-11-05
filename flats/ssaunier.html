@@ -6,16 +6,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Le Wagon - Middleman - About</title>
-    <link href="stylesheets/application-38fb824d.css" rel="stylesheet" />
-    <script src="javascripts/application-93de88c9.js"></script>
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <title></title>
+    <link href="../stylesheets/application-38fb824d.css" rel="stylesheet" />
+    <script src="../javascripts/application-93de88c9.js"></script>
+    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
 
-<a href="./" class="navbar-wagon-brand">    <img src="images/logo-acc9c0ec.png" alt="Logo" />
+<a href="index.html" class="navbar-wagon-brand">    <img src="../images/logo-acc9c0ec.png" alt="Logo" />
 </a>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -50,25 +50,50 @@
   </div>
 </div>
 
-    <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fas fa-heart"></i> by</h1>
-    <ul class="list-inline">
-        <li>
-<a href="https://kitt.lewagon.com/alumni/tococorocko" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/tococorocko" class="img-circle" alt="Tococorocko" />
-</a>          <h2>Lucca Kaiser</h2>
-          <p>
-<a href="https://github.com/tococorocko" target="_blank">              <i class="fab fa-github"></i> tococorocko
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/od91" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/od91" class="img-circle" alt="Od91" />
-</a>          <h2>Ole Dening</h2>
-          <p>
-<a href="https://github.com/od91" target="_blank">              <i class="fab fa-github"></i> od91
-</a>          </p>
-        </li>
-    </ul>
+    <!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+
+<!-- Inject flat data in template -->
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1 card-padding">
+        <div class="header-flat-details">
+          <div class="header-flat-owner text-center">
+            <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle avatar-small" alt="Ssaunier" />
+            <p>Sebastien</p>
+          </div>
+          <div class="header-flat-name">
+            <h1>Charming room in Montmartre</h1>
+            <p>Paris </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <form action="#">
+            <h4>Book this flat</h4>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-6">
+                  <input type="text" class="form-control" placeholder="checkin" id="checkin">
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="form-control" placeholder="checkout">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select name="" id="guests" class="form-control">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+              </select>
+            </div>
+            <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
