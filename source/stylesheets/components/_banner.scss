@@ -20,12 +20,13 @@
     opacity: 0.6;
     margin-bottom: 30px;
   }
-  a {
-    background-color: $orange;
-    color: $light-gray;
-    &:hover {
-      opacity: 0.6;
-      transition: 2s;
-    }
+}
+
+.banner-button {
+  background-color: $orange;
+  color: $light-gray;
+  &:hover {
+    opacity: 0.6;
+    transition: 2s;
   }
 }

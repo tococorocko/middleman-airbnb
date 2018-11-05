@@ -1,28 +1,35 @@
-- city: 'Berlin'
-  country: 'Germany'
-  first_name: 'Sebastian'
-  last_name: 'Saunier'
-  username: 'ssaunier'
-  description: 'Big Penthous Flat'
-  rating: 3
-- city: 'Paris'
-  country: 'France'
-  first_name: 'Boris'
-  last_name: 'Papillard'
-  username: 'papillard'
-  description: 'Small charming place'
+ssaunier:
+  name: Sebastien
+  description: Charming room in Montmartre
+  city_name: Paris
+  country: France
+  wifi: false
   rating: 4
-- city: 'London'
-  country: 'England'
-  first_name: 'Boris'
-  last_name: 'Papillard'
-  username: 'papillard'
-  description: 'Shitty little shithole'
-  rating: 1
-- city: 'Lausanne'
-  country: 'Switzerland'
-  first_name: 'Lucca'
-  last_name: 'Kaiser'
-  username: 'tococorocko'
-  description: 'Luxury Penthouse'
+papillard:
+  name: Boris
+  description: Small flat in Tokyo
+  city_name: Tokyo
+  country: Japan
+  wifi: true
+  rating: 3
+monsieurpaillard:
+  name: Romain
+  description: Nice flat in Piccadilly
+  city_name: London
+  country: United Kingdom
+  wifi: true
   rating: 5
+tococorocko:
+  name: Lucca
+  description: Luxury Loft
+  city_name: Lausanne
+  country: Switzerland
+  wifi: true
+  rating: 5
+od91:
+  name: Ole
+  description: Shithole
+  city_name: Barcelona
+  country: Spain
+  wifi: true
+  rating: 1
