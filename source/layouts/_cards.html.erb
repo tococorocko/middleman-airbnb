@@ -1,0 +1,29 @@
+<div class="container" id="home-flats">
+  <h2 class="text-center">Recent flats</h2>
+    <div class="row">
+      <% data.flats.each do |flat| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%=flat.city.downcase%>');">
+            <div class="card-category"><%= flat.city %>, <%= flat.country %>
+            </div>
+            <div class="card-description">
+              <h3><%= flat.first_name %>'s home</h3>
+              <p><%= flat.description %></p>
+
+              <p class="rating">
+                <% flat.rating.times do %>
+                  <i class="fa fa-star" style="color: #ffb400"></i>
+                <% end %>
+                <% gs = 5 - flat.rating %>
+                  <% gs.times do %>
+                    <i class="fa fa-star" style="color: grey"></i>
+                  <% end %>
+              </p>
+            </div>
+          <img class="card-user avatar" src="https://kitt.lewagon.com/placeholder/users/<%=flat.username.downcase %>">
+          <a class="card-link" href="#" ></a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+</div>
